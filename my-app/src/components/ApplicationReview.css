@@ -40,7 +40,7 @@
   
   .review-button {
     padding: 0.5rem 1rem;
-    background-color: #007bff;
+    background-color: #4184ab;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -49,7 +49,7 @@
   }
   
   .review-button:hover {
-    background-color: #0056b3;
+    background-color: #36a0de;
   }
   
   .selected-application-details {

@@ -69,12 +69,12 @@ const TrackApplication = () => {
           </div>
         </form>
         {applicationStatus && <p className="status-message">Status: {applicationStatus}</p>}
-        {applicationStatus === 'approved' && (
+        {applicationStatus === 'Approved' && (
           <>
-            {paymentStatus === 'completed' ? (
+            {paymentStatus === 'Completed' ? (
               <p className="status-message">Payment status: {paymentStatus}</p>
             ) : (
-              <div className="payment-link">
+              <div className="Payment-link">
                 <Link to={`/dashboard/track-application/make-payment/${applicationId}`}>Make Payment</Link>
               </div>
             )}

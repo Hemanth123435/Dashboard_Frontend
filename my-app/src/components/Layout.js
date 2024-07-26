@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
             <ul className="nav-links">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/programs">Programs</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              {/* <li><Link to="/contact">Contact</Link></li> */}
             </ul>
           )}
           {isRegisterPage() && (

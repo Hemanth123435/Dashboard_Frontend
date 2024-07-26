@@ -16,7 +16,13 @@ import TrackApplication from './components/TrackApplication';
 import ApplicationReview from './components/ApplicationReview';
 import PaymentPage from './components/PaymentPage';
 
+
+
 const App = () => {
+  const getUserRole = () => localStorage.getItem('userRole'); // Or use context/state management
+
+  const role = getUserRole();
+  const allowedRoles = ['student', 'admin'];
   return (
     <Router>
       <Routes>

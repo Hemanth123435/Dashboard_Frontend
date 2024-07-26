@@ -8,6 +8,8 @@ const Dashboard = () => {
   const [enrolledCourses, setEnrolledCourses] = useState(null);
   const navigate = useNavigate();
 
+  
+
   useEffect(() => {
     const fetchDashboardData = async () => {
       const token = localStorage.getItem('token');
@@ -58,13 +60,17 @@ const Dashboard = () => {
     navigate('/', { replace: true });
   };
 
+  const handleTrackApplication = () => {
+    navigate('/dashboard/track-application');
+  };
+
   return (
     <UserLayout>
       <div className="dashboard-container">
         <div className="dashboard-card">
           <h2>Dashboard</h2>
           <p>{message}</p>
-          
+
           {/* Display enrolled courses if available */}
           {enrolledCourses && (
             <div className="enrolled-courses">
@@ -95,11 +101,16 @@ const Dashboard = () => {
               </table>
             </div>
           )}
+        </div>
 
-          <div className="dashboard-links">
-            <Link to="/dashboard/track-application">Track Application</Link><br />
-          </div>
-          <button onClick={handleLogout}>Logout</button>
+        <div className="dashboard-links">
+          <button className="dashboard-button track-application-button" onClick={handleTrackApplication}>
+            Track Application Status
+          </button>
+          <br />
+          <button className="dashboard-button logout-button" onClick={handleLogout}>
+            Logout
+          </button>
         </div>
       </div>
     </UserLayout>

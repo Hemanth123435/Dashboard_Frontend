@@ -85,10 +85,10 @@ body {
 
 .cta-button {
   font-size: 1.1em;
-  color: #00695c;
+  color: #4184ab;
   background-color: #ffffff;
   padding: 12px 25px;
-  border: 2px solid #00695c;
+  border: 2px solid #4184ab;
   border-radius: 25px;
   text-decoration: none;
   cursor: pointer;
@@ -97,12 +97,12 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #00695c;
+  background-color: #4184ab;
   color: #ffffff;
 }
 
 .footer {
-  background-color: #004d40;
+  background-color: #1097c0;
   color: white;
   text-align: center;
   padding: 15px 0;
